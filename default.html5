@@ -70,5 +70,8 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+<footer>
+<a href="https://wikiknights.com/">Wiki Knights</a> | <a href="https://github.com/Wiki-Knights/CS-Materials">GitHub</a>
+</footer>
 </body>
 </html>
