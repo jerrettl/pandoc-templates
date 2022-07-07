@@ -45,9 +45,9 @@ $if(title)$
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
+$if(author)$
+<p class="author">By: $for(author)$$author$$sep$, $endfor$</p>
+$endif$
 $if(date)$
 <p class="date">$date$</p>
 $endif$
