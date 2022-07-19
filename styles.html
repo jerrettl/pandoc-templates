@@ -41,20 +41,6 @@ body {
   text-rendering: optimizeLegibility;
   font-kerning: normal;
 }
-@media print {
-  html {
-    background-color: transparent;
-    color: black;
-    font-size: 12pt;
-  }
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2, h3, h4 {
-    page-break-after: avoid;
-  }
-}
 p {
   margin: 1em 0;
 }
@@ -260,6 +246,20 @@ $endif$
 $if(highlighting-css)$
 $highlighting-css$
 $endif$
+@media print {
+  html {
+    background-color: transparent;
+    color: black;
+    font-size: 12pt;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+}
 $if(displaymath-css)$
 .display.math{display: block; text-align: center; margin: 0.5rem auto;}
 $endif$
