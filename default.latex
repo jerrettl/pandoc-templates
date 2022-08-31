@@ -115,6 +115,8 @@ $if(sansfont)$
 $endif$
 $if(monofont)$
   \setmonofont[$for(monofontoptions)$$monofontoptions$$sep$,$endfor$]{$monofont$}
+$elseif(default-monofont-pdf)$
+  \setmonofont[$for(monofontoptions)$$monofontoptions$$sep$,$endfor$]{$default-monofont-pdf$}
 $endif$
 $for(fontfamilies)$
   \newfontfamily{$fontfamilies.name$}[$for(fontfamilies.options)$$fontfamilies.options$$sep$,$endfor$]{$fontfamilies.font$}
